@@ -1,51 +1,295 @@
 <!DOCTYPE html>
+<!doctype html>
+<!-- Mason Flood Hazard Research Lab goes Online by Prachi Gupta -->
 <html>
+<head>
+
+<link
+	href="data:image/x-icon;base64,AAABAAEAEBAAAAEAIABoBAAAFgAAACgAAAAQAAAAIAAAAAEAIAAAAAAAAAQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAQGkA/0BpAP9AaQD/ZoczYAAAAAAAAAAAQGkA/0BpAP9AaQD/AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAABAaQD/AAAAAAAAAAAAAAAAAAAAAAAAAABAaQD/QGkA/wAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAQGkA/wAAAAAAAAAAQGkA/wAAAAAAAAAAQGkA/0BpAP8AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAEBpAP8AAAAAfppTK0BpAP8AAAAAAAAAAEBpAP9AaQD/AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAABAaQD/AAAAAEBpAP9AaQD/QGkA/wAAAABAaQD/QGkA/wAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAQGkA/0BpAP9AaQD/AAAAAEBpAP8AAAAAQGkA/0BpAP8AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAEBpAP9AaQD/QGkA/wAAAAAAAAAAQGkA/0BpAP9AaQD/AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAABAaQD/QGkA/wAAAAAAAAAAAAAAAEBpAP9AaQD/QGkA/wAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAEBpAP8AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAEBpAP8AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAQvv7/QGkA/0BpAP9AaQD/AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAABC+/v8AAAAAQGkA/0BpAP9AaQD/AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAEL7+/xC+/v8AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAQvv7/EL7+/xC+/v8AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAQvv7EEL7+/wAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAQvv7/jj8AAN8/AADbPwAA2z8AANE/AADFPwAAxj8AAM4/AAD/vwAA/38AAP8PAAD/owAA/88AAP/jAAD/+QAA//4AAA=="
+	rel="icon" type="image/x-icon" />
+
+
+	<title>Mason Flood Hazard Research Lab</title>
+	<link rel="stylesheet" type="text/css" href="css/slideshow.css">
+	<script type="text/javascript" src="javascript/slideshow.js"></script>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+	<script>jQuery(document).ready(function($){ $("class or id video").prop("muted", "muted"); });</script>
+	<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1/jquery.js"></script>
+	
+</head>
 <body>
-<h2>Mason Flood Hazards Research Lab</h2>
+<link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap.min.css" rel="stylesheet"/>
 
-  <h2>
-: iFLOOD: An Integrated Framework for Real Time Flood Forecast For Total Water Modeling
+<style>
+<!--video#bgvid { 
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    min-width: 100%;
+    min-height: 100%;
+    width: auto;
+    height: auto;
+    z-index: -100;
+    -ms-transform: translateX(-50%) translateY(-50%);
+    -moz-transform: translateX(-50%) translateY(-50%);
+    -webkit-transform: translateX(-50%) translateY(-50%);
+    transform: translateX(-50%) translateY(-50%);
+    background: url(../images/frontcover.jpg) no-repeat;
+    background-size: cover; 
+}
+#bgvid:after{
+content:'';
+background : transparent url(../images/pattern.png) repeat top left;
+}
+
+@media screen and (max-device-width: 800px) {
+    html {
+         background: url(../images/frontcover.jpg) #000 no-repeat center center fixed;
+    }
+    #bgvid {
+        display: none;
+    }
+} -->
+
+
+/****************************************************************************************************************************************/
+
+.nav ul {
+  list-style: none;
+  background-color: #444;
+  text-align: center;
+  padding: 0;
+  margin: 0;
+}
+.nav li {
+  font-family: 'Oswald', sans-serif;
+  font-size: 1.2em;
+  line-height: 40px;
+  height: 40px;
+  border-bottom: 1px solid #888;
+}
+ 
+.nav a {
+  text-decoration: none;
+  color: #fff;
+  display: block;
+  transition: .3s background-color;
+}
+ 
+.nav a:hover {
+  background-color: #005f5f;
+}
+ 
+.nav a.active {
+  background-color: #fff;
+  color: #444;
+  cursor: default;
+}
+ 
+@media screen and (min-width: 600px) {
+  .nav li {
+    width: 120px;
+    border-bottom: none;
+    height: 50px;
+    line-height: 50px;
+    font-size: 1.4em;
+  }
+ 
+  /* Option 1 - Display Inline */
+  .nav li {
+    display: inline-block;
+    margin-right: -4px;
+  }
+ 
+
+/********************************************************************************************************************************************/
+
+
+#featured {
+	clear: both;
+	padding-top: 24px;
+}
+#featured ul {
+	display: inline-block;
+	list-style: none;
+	width: 1000px;
+	margin: 30px;
+	margin-left: 30px;
+	padding: 0;
+}
+#featured ul li {
+	float: left;
+	width: 220px;
+	margin-left: 100px;
+	position: relative;
+}
+#featured ul li:first-child {
+	margin-left: 50px;
+}
+
+#featured ul li img {
+	margin-left: -5px;
+}
+
+/**************************************************************************************************************************************************/
+
+
+#im{
+
+   width:300px;
+   height:200px;
+
+}
+
+
+#title{
+margin-left: -200px;
+text-align: left;
+
+}
+ #abtus{
+ margin-left: 50px;
+ margin-right : 50px;
+ }
+ 
+ #video{
+ margin-left: 200px;
+ }
+/**************************************************************************************************************************************************/
+</style>
+
+	<div id="header">
+	<div class = "row">
+	<div class="col-xs-6" id = "logo">
+		<a href="index.html" >
+			<img   src="images/logo.jpg" alt="">
+		</a>
+		</div>
+		<div class="col-xs-6">
+				<h1 id="title" >Educational Flood Forecast System</h1>
+				
+				
+			</div>
+</div>
+
+
+<div id ="abtus">
+<h2>
+
+iFLOOD: An Integrated Framework for Real Time Flood Forecast For Total Water Modeling
 </h2>
-  
-  <h2>
-Research and educational systems supporting the development of the next generation of real time flood forecast systems, capable of providing accurate, timely and reliable information to support emergency management and response in areas impacted by multi-flood hazards. 
-</h2>
-  
-  <h2>
+<br/><br/>
+<p><b> About Us</b><p>
+<p>
+Research and educational systems supporting the development of the next generation of real time flood forecast systems, capable of providing accurate, timely and reliable information to support emergency management and response in areas impacted by multi-flood hazards.
+
 Our students are working on the complex dynamics of multi-flood hazards including storm surges, riverine flow, tidal oscillation and urban storm water systems. Our final goal is to develop integrated computational tools capable of predicting the total water levels resulting from the interaction of these systems in real time and into the future.
-</h2>
-  
-  <h2>
-The products provided here are for educational and scientific research only and should not be used for decision making in its present form. The models, methods and results published here are under constant testing, development and subject to educational and training exercises on real time. 
-</h2>
-  
-<h2>
-iFLOOD: Chesapeake Bay Flood Forecast System powered by ADCIRC
-</h2>
-  
-<h2>
-iFLOOD: Tidal prediction system for the National Water Model
-</h2>
-  
-<h2>
-iFLOOD: Potomac River Flood Forecast System powered by ADCIRC
-</h2>
-  
-<h2>
-iFLOOD: Washington, DC Flood Forecast System powered by HEC-RAS
-</h2>
-  
-<h2>
-iFLOOD: Dogue Creek Flood Forecast System powered by HEC-RAS & SWMM
-</h2>
 
-  
+The products provided here are for educational and scientific research only and should not be used for decision making in its present form. The models, methods and results published here are under constant testing, development and subject to educational and training exercises on real time.
+</p>
 
-=======
-<a target="_blank" href="http://frg.vse.gmu.edu" class="btn btn-lg btn-light">GMU Website</a>
+</div>
+<!--background video-->
+<!--video controls playsinline autoplay muted loop poster="images/frontcover.jpg" id="bgvid">
+<button id="vidpause" style="color: white " ><b>Pause</b></button>
 
-=======
-<a target="_blank" href="https://raw.githubusercontent.com/MasonFloodHazardsResearchLab/MasonFloodHazardsResearchLab.github.io/master/fort.61" class="btn btn-lg btn-light">Tabular Data</a>
-=======
+    <source src="video/Potomac River Spring Flooding at Great Falls.mp4" type="video/mp4">
+</video> -->
+
+	<!--menu bar-->	
+	<!--	<div class="nav" >
+      <ul>
+        <li class="home"><a href="index2.html">Home</a>		
+		</li>
+       
+        <li class="about"><a href="about.html">About</a></li>
+		<li class="Projects"><a href="#featured">Research</a>
+
+
+		
+		</li>
+       
+        <li class="contact"><a href="http://frg.vse.gmu.edu/people">Contact</a></li>
+		
+      </ul>
+    </div> -->
+	
+
+<div >
+<div   id="featured">
+						<ul>
+							<li>
+								<a href="https://masonfloodhazardsresearchlab.github.io/ches_bay_adcirc/index.html" onclick="return confirm_alert(this);"> <img id= "im" src="images/selina.png" alt="Img">
+								<h4>iFLOOD: Chesapeake Bay Flood Forecast System powered by ADCIRC</h4>
+								</a>
+							</li>
+						
+							<li>
+								<a href="#"> <img id= "im"  src="images/selina.png" alt="Img">
+								<h4>iFLOOD: Potomac River Flood Forecast System powered by ADCIRC</h4>
+								Upcoming Soon...
+								</a>
+							</li>
+						
+							<li>
+								<a href="#"> <img id= "im"  src="images/selina.png" alt="Img">
+								<h4>iFLOOD: Tidal prediction system for the National Water Model</h4>
+								Upcoming Soon...
+								</a>
+							</li>
+							
+							<li>
+								<a href="#"> <img id= "im"  src="images/selina.png" alt="Img">
+								<h4>iFLOOD: Washington, DC Flood Forecast System powered by HEC-RAS</h4>
+								Upcoming Soon...
+								</a>
+							</li>
+							
+							<li>
+								<a href="#"> <img id= "im"  src="images/selina.png" alt="Img">
+								<h4>iFLOOD: Dogue Creek Flood Forecast System powered by HEC-RAS & SWMM</h4>
+								Upcoming Soon...
+								</a>
+							</li>
+						</ul>
+						</div>
+					
+					
+					
+							
+					
+					</div>
+<div id="video"  >
+<video width="600" height="500" controls playsinline autoplay muted loop >
+  <source src="video/Potomac River Spring Flooding at Great Falls.mp4" type="video/mp4">
+</video>
+<p><a href="https://www.youtube.com/channel/UCXExJRbcZMkS6J1L3rWv7Dw"> 
+								<h5>Wanna see our videos? Click the link.</h5>
+								</a></p>
+	</div>
+
+
+	</div>	
+		
+	</div>
+	
+	<div id="footer">
+		<div>
+			
+			<ul>
+				
+				<li>
+					<a href="https://raw.githubusercontent.com/MasonFloodHazardsResearchLab/MasonFloodHazardsResearchLab.github.io/master/fort.61" id="Tabular Data" ><b>Tabular Data</b></a>
+				</li>
+			</ul>
+		</div>
+	</div>
+	
+	<script type="text/javascript">
+function confirm_alert(node) {
+    return confirm("Information: The data is a prediction on educational studies of past and present condition. Cannot be treated as rel");
+}
+</script>
+
 </body>
 </html>

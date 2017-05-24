@@ -8,5 +8,8 @@ GITDIR=/home/fhrl/Documents/PotomicTidalForecastModel/RESULTS/PLOTS/MasonFloodHa
 git pull
 git add --all
 git commit -m "testing"
+git config --global --edit
+git config --amend --reset-author
+
 git push 
-Username='akhalid6@gmu.edu'
+#Username='akhalid6@gmu.edu'

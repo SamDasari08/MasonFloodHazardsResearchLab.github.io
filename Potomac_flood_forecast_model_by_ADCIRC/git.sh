@@ -9,6 +9,6 @@ git pull
 git add --all
 git commit -m "testing"
 
-
+git config --global credential.helper wincred
 git push 
 #Username='akhalid6@gmu.edu'

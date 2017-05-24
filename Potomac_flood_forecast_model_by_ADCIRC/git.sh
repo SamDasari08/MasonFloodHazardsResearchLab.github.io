@@ -4,11 +4,10 @@
 #SERVER="akhalid6@gmu.edu"
 #GITDIR=/home/fhrl/Documents/PotomicTidalForecastModel/RESULTS/PLOTS/MasonFloodHazardsResearchLab.github.io/Potomac_flood_forecast_model_by_ADCIRC
 
-
+git remote set-url origin git@github.com:MasonFloodHazardsResearchLab/MasonFloodHazardsResearchLab.github.io.git
 git pull
 git add --all
 git commit -m "testing"
 
-git config --global credential.helper wincred
 git push 
 #Username='akhalid6@gmu.edu'

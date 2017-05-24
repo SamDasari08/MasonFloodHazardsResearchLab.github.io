@@ -8,4 +8,4 @@ GITDIR=/home/fhrl/Documents/PotomicTidalForecastModel/RESULTS/PLOTS/MasonFloodHa
 git pull
 git add --all
 git commit -m "testing"
-git push
+git push origin --all

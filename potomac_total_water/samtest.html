@@ -13,7 +13,7 @@
 <link rel="stylesheet" href="https://www.amcharts.com/lib/3/plugins/export/export.css" type="text/css" media="all" />
 <script src="https://www.amcharts.com/lib/3/themes/light.js"></script>
 
-<div>
+<!-- <div>
 <p></p>
 
 </div><div>
@@ -27,7 +27,7 @@
 <div>
 <p> Potomac Model Forecasted Water levels 06/08/2017 1300 </p>
 
-</div>
+</div> 
 
 <!-- Chart code -->
 <script>
@@ -219,8 +219,7 @@ var chart = AmCharts.makeChart("chartdiv", {
         "enabled": true
     }
 });
-
-<!-- chart.addListener("rendered", zoomChart); -->
+chart.addListener("rendered", zoomChart); 
 if(chart.zoomChart){
 	chart.zoomChart();
 }

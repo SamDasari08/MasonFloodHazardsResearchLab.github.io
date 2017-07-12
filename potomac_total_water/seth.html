@@ -13,9 +13,9 @@
 }
 
 
-<!-- Plot 1  -->
+<!-- Plot 1 --> 
 
-
+<!-- 
 </style>
 <svg width="700" height="300"></svg>
 <script src="http://d3js.org/d3.v4.min.js"></script>
@@ -50,6 +50,7 @@ d3.tsv("https://raw.githubusercontent.com/MasonFloodHazardsResearchLab/MasonFloo
       })
     };
   });
+  
 
   x.domain(d3.extent(data, function(d) { return d.date; }));
 
@@ -98,10 +99,14 @@ function type(d, _, columns) {
   d.date = parseTime(d.date);
   for (var i = 1, n = columns.length, c; i < n; ++i) d[c = columns[i]] = +d[c];
   return d;
-}
-
+} 
+-->
+  
 </script>
 
+<div>
+<p> time vs stage plot </p>
+</div>
 
 <!-- Plot 2 -->
 

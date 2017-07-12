@@ -11,11 +11,9 @@
   stroke: steelblue;
   stroke-width: 1.5px;
 }
+<!-- Plot 1 --> 
 
-
-<!-- Plot 1  -->
-
-
+<!-- 
 </style>
 <svg width="700" height="300"></svg>
 <script src="http://d3js.org/d3.v4.min.js"></script>
@@ -50,6 +48,7 @@ d3.tsv("https://raw.githubusercontent.com/MasonFloodHazardsResearchLab/MasonFloo
       })
     };
   });
+  
 
   x.domain(d3.extent(data, function(d) { return d.date; }));
 
@@ -98,21 +97,24 @@ function type(d, _, columns) {
   d.date = parseTime(d.date);
   for (var i = 1, n = columns.length, c; i < n; ++i) d[c = columns[i]] = +d[c];
   return d;
-}
-
+} 
+-->
+  
 </script>
-
+  
+<div>
+<p> date vs stage plot. Shows the date at the bottom of the x-axis that this rain data was collected (shown on the y-axis). </p>
+</div>
 
 <!-- Plot 2 -->
 
-
 </style>
 <svg width="700" height="300"></svg>
 <script src="http://d3js.org/d3.v4.min.js"></script>
 <script>
 
 var svg = d3.select("svg"),
-    margin = {top: 20, right: 80, bottom: 30, left: 50},
+    margin = {top: 20, right: 80, bottom: 50, left: 50},
     width = svg.attr("width") - margin.left - margin.right,
     height = svg.attr("height") - margin.top - margin.bottom,
     g = svg.append("g").attr("transform", "translate(" + margin.left + "," + margin.top + ")");
@@ -189,5 +191,21 @@ function type(d, _, columns) {
   for (var i = 1, n = columns.length, c; i < n; ++i) d[c = columns[i]] = +d[c];
   return d;
 }
+   "chartScrollbar": {
+        "graph":"g1",
+        "gridAlpha":0,
+        "color":"#888888",
+        "scrollbarHeight":55,
+        "backgroundAlpha":0,
+        "selectedBackgroundAlpha":0.1,
+        "selectedBackgroundColor":"#888888",
+        "graphFillAlpha":0,
+        "autoGridCount":true,
+        "selectedGraphFillAlpha":0,
+        "graphLineAlpha":0.2,
+        "graphLineColor":"#c2c2c2",
+        "selectedGraphLineColor":"#888888",
+        "selectedGraphLineAlpha":1
+    },
 
 </script>

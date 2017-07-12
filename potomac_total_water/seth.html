@@ -11,7 +11,7 @@
   stroke: steelblue;
   stroke-width: 1.5px;
 }
-  
+<script> 
 <div>
 <p> date vs stage plot </p>
 
@@ -20,6 +20,7 @@
 <p>  Model Forecasted Water levels test </p>
 
 </div>
+</scrip>
 
 <!-- Plot 2 -->
 
@@ -30,7 +31,7 @@
 <script>
 
 var svg = d3.select("svg"),
-    margin = {top: 200, right: 80, bottom: 120, left: 50},
+    margin = {top: 20, right: 80, bottom: 50, left: 50},
     width = svg.attr("width") - margin.left - margin.right,
     height = svg.attr("height") - margin.top - margin.bottom,
     g = svg.append("g").attr("transform", "translate(" + margin.left + "," + margin.top + ")");

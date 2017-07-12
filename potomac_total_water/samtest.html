@@ -222,14 +222,7 @@ var chart = AmCharts.makeChart("chartdiv", {
         "enabled": true
     }
 });
-chart.addListener("rendered", zoomChart); 
-if(chart.zoomChart){
-	chart.zoomChart();
-}
-
-function zoomChart(){
-    chart.zoomToIndexes(Math.round(chart.dataProvider.length * 0.4), Math.round(chart.dataProvider.length * 0.55));
-}
+	
 </script>
 
 <!-- HTML -->
